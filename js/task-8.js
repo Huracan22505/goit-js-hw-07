@@ -1,6 +1,6 @@
-let render = document.querySelector('button[data-action="render"]');
-let destroy = document.querySelector('button[data-action="destroy"]');
-let input = document.querySelector('#controls > input');
+const render = document.querySelector('button[data-action="render"]');
+const destroy = document.querySelector('button[data-action="destroy"]');
+const input = document.querySelector('#controls > input');
 const boxes = document.querySelector('#boxes');
 
 function createDives(amount) {
@@ -26,5 +26,6 @@ function createBoxes() {
 
 function destroyBoxes() {
   boxes.innerHTML = '';
+  input.value = '';
 }
 destroy.addEventListener('click', destroyBoxes);
