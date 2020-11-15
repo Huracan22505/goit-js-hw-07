@@ -1,0 +1,39 @@
+body {
+  font-size: 20px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+a {
+  margin-bottom: 30px;
+
+  font-size: 60px;
+
+  text-decoration: none;
+}
+
+#gallery {
+  display: flex;
+
+  list-style: none;
+}
+
+.item + .item {
+  margin-left: 15px;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
