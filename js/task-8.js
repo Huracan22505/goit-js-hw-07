@@ -13,8 +13,9 @@ function createDives(amount) {
     let createDiv = document.createElement('div');
     createDiv.style.width = `${size}px`;
     createDiv.style.height = `${size}px`;
-    createDiv.style.backgroundColor =
-      '#' + ((Math.random() * 0xfffff0) << 0).toString(16);
+    createDiv.style.backgroundColor = `#${Math.random()
+      .toString(16)
+      .substr(-6)}`;
     dives.push(createDiv);
   }
   boxes.append(...dives);

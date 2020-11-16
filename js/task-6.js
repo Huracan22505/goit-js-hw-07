@@ -1,5 +1,5 @@
 const input = document.querySelector('#validation-input');
-console.log('input', input.dataset.length);
+// console.log('input', input.dataset.length);
 
 input.setAttribute('onkeyup', 'this.value = this.value.replace(/[ ]/g,"");');
 
