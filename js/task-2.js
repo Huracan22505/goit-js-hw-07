@@ -2,11 +2,11 @@ import ingredients from './data/ingredients.js';
 
 const listItem = document.querySelector('#ingredients');
 
-const createItem = ingredient => {
+let items = [];
+for (let i = 0; i < ingredients.length; i++) {
   let createLi = document.createElement('li');
-  createLi.textContent = ingredient;
-  listItem.appendChild(createLi);
-  return createLi;
-};
+  createLi.textContent = ingredients[i];
+  items.push(createLi);
+}
 
-ingredients.map(ingredient => createItem(ingredient));
+listItem.append(...items);
