@@ -5,7 +5,7 @@ const gallery = document.querySelector('#gallery');
 const makeGallery = ({ url, alt }) => {
   return `
       <li class="item">
-        <img class="image" src="${url}" alt="${alt}" width="360" height="300"/>
+        <img src="${url}" alt="${alt}" width="360" height="300"/>
       </li>`;
 };
 
