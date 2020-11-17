@@ -3,7 +3,7 @@ const decremButton = document.querySelector("button[data-action='decrement']");
 let counterValue = document.querySelector('#value');
 
 decremButton.addEventListener('click', () => {
-  counterValue.textContent -= 1;
+  if (counterValue.textContent > 0) counterValue.textContent -= 1;
 });
 
 incremButton.addEventListener('click', () => {
