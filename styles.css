@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+#text {
+  font-size: 0px;
+}
+
 #gallery {
   display: flex;
 

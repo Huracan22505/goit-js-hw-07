@@ -1,7 +1,14 @@
 const input = document.querySelector('#validation-input');
 // console.log('input', input.dataset.length);
 
-input.setAttribute('onkeyup', 'this.value = this.value.replace(/[ ]/g,"");');
+// input.setAttribute(
+//   'onkeyup',
+//   'this.value = this.value.replace(/[^a-z0-9]/gi,"");',
+// );
+
+input.addEventListener('input', () => {
+  input.value = input.value.replace(/[^a-z0-9]/gi, '');
+});
 
 input.addEventListener('blur', onInputBlur);
 
