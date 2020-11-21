@@ -6,6 +6,9 @@ const boxes = document.querySelector('#boxes');
 let dives = [];
 
 function createDives(amount) {
+  boxes.innerHTML = '';
+  dives = [];
+
   let size = 30;
 
   for (let i = 0; i < amount; i++) {
