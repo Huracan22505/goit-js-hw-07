@@ -1,4 +1,4 @@
-const input = document.querySelector('#validation-input'); // console.log('input', input.dataset.length);
+const input = document.querySelector('#validation-input');
 
 // input.setAttribute(
 //   'onkeyup',
